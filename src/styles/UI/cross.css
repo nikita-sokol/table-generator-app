@@ -1,0 +1,32 @@
+.cross {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    position: relative;
+    transform: scale(1);
+    transition: all 0.2s ease-in;
+}
+.cross:hover {
+    transform: scale(1.1);
+}
+.cross:active {
+    transform: scale(0.9);
+}
+.cross:before,
+.cross:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: #EB5E58;
+    width: 20px;
+    height: 2px;
+    border-radius: 1px;
+    top: 45%;
+    right: -20%;
+}
+.cross:before {
+    transform: rotate(45deg);
+}
+.cross:after {
+    transform: rotate(-45deg);
+}

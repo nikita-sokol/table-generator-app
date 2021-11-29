@@ -1,0 +1,30 @@
+.button {
+    appearance: none;
+    border: 0;
+    background: #1493FE;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+.button:hover {
+    background: #3ca7ff;
+}
+.button:active {
+    background: #0084f3;
+}
+.button[disabled] {
+    cursor: no-drop;
+    background: #C2CBD1;
+}
+.button[disabled]:hover {
+    cursor: no-drop;
+    background: #C2CBD1;
+}
+.button[disabled]:active {
+    cursor: no-drop;
+    background: #C2CBD1;
+}
+
+.button_font-weight_bold {
+    font-weight: bold;
+}
