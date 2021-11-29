@@ -94,7 +94,7 @@
 .select__option::after {
     content: '';
     position: absolute;
-    width: 220px;
+    width: calc(100% - 32px);
     height: 1px;
     top: 0;
     right: 0;

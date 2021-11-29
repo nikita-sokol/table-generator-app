@@ -4,10 +4,12 @@ import serviceModalActive from "../store/serviceModalActive";
 import serviceTable from "../store/serviceTable";
 
 const Row = observer( (props) => {
-    const hendlerModalActive = () => {
+    const hendlerModalActive = (e) => {
+        e.preventDefault()
         serviceModalActive.makeActive(props.tableId, props.row.id, props.typeTable);
     }
-    const hendlerRemoveRow = () => {
+    const hendlerRemoveRow = (e) => {
+        e.preventDefault()
         if (props.typeTable === 'sourceTable') {
             serviceTable.removeSourceRow(props.row.id);
         } else if (props.typeTable === 'newTable')  {

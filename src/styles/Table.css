@@ -36,6 +36,7 @@
     border-right: 1px solid #EBEBEB;
     border-bottom: 1px solid #EBEBEB;
     background: #fff;
+    vertical-align: middle;
 }
 .table__td:first-child {
     padding: 12px;
@@ -63,6 +64,7 @@
 
     text-decoration: underline;
 }
+
 .table__row-edit {
     color: #057AE3;
 }
@@ -73,6 +75,14 @@
     margin:0;
     padding:0;
     cursor: pointer;
+}
+@media screen and (max-width: 400px){
+    .table__cell-btns {
+        flex-direction: column;
+    }
+    .table__row-del {
+        margin-top: 10px;
+    }
 }
 
 .table-btns {
